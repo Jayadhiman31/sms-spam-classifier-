@@ -4,6 +4,10 @@ import string
 from nltk.corpus import stopwords
 import nltk
 from nltk.stem.porter import PorterStemmer
+import os
+
+
+secret_key = os.getenv("SECRET_KEY")
 
 
 nltk.download('punkt', force=True)
